@@ -1,0 +1,26 @@
+@import "./reset";
+
+// ==============
+// Variables
+// ==============
+$main-background-color: #1e2022;
+
+$headers-color: #cecac3;
+$headers-hover-cover: #8ea8c1;
+$underline-background-color: #856430;
+
+$description-color: #999183;
+$price-color: #c9a36a;
+$image-border-color: #7b5c2d;
+
+$button-text-color: #cba665;
+$buttons-hover-background-color: #87672e;
+$buttons-hover-text-color: #e7e6e2;
+
+body {
+  background: $main-background-color;
+}
+
+h1 {
+  color: $headers-color;
+}
