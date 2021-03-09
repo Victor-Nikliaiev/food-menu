@@ -5,4 +5,4 @@ React app with using such a hook as useState and was applied conditional renderi
 Also was used SCSS(grid and flexbox).
 Great thanks to John Smilga and creators of Dark Reader add-on for inspiring me!
 
-Live version of the app is on: [here](http://google.com)
+Live version of the app is on: [Here](https://food-menu-sandy.vercel.app/)
