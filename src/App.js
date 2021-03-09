@@ -1,5 +1,40 @@
+import { useState } from "react";
+import Categories from "./Categories";
+import Menu from "./Menu";
+import foodItems from "./data";
+
+const allCategories = [
+  "all",
+  ...new Set(foodItems.map((item) => item.category)),
+];
+
 function App() {
-  return <h1>App Setup</h1>;
+  const [items, setItems] = useState(foodItems);
+  const [categories] = useState(allCategories);
+
+  const filterItems = (category) => {
+    if (category === "all") {
+      setItems(foodItems);
+      return;
+    }
+    const filteredItems = foodItems.filter(
+      (item) => item.category === category
+    );
+    setItems(filteredItems);
+  };
+
+  return (
+    <main>
+      <section className="container">
+        <div className="title">
+          <h1>our menu</h1>
+          <div className="underline"></div>
+        </div>
+        <Categories categories={categories} filterItems={filterItems} />
+        <Menu items={items} />
+      </section>
+    </main>
+  );
 }
 
 export default App;
