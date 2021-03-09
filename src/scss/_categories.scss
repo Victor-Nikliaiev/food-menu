@@ -1,0 +1,36 @@
+// =====================
+// Categories section
+// =====================
+
+.btn-container {
+  width: 70%;
+  @include flexCenter(row wrap);
+  padding: 1vw;
+  margin-top: 1vw;
+}
+
+.category-btn {
+  background: transparent;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 0.3rem;
+
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+
+  min-width: 5rem;
+  min-height: 2rem;
+  margin: 0.5rem;
+  padding: 0.4rem;
+
+  color: $button-color;
+  font-family: $main-font-family;
+  font-size: 1.3rem;
+
+  &:hover {
+    background: $buttons-hover-background-color;
+    color: $buttons-hover-color;
+  }
+}

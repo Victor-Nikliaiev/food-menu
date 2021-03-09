@@ -1,5 +1,8 @@
 # Food menu
 
-Simple react app with using such a hook as useState. Also here is applied conditional rendering.
+React app with using such a hook as useState and was applied conditional rendering.
 
-Live version of the app is: [here](http://google.com)
+Also was used SCSS(grid and flexbox).
+Great thanks to John Smilga and creators of Dark Reader add-on for inspiring me!
+
+Live version of the app is on: [here](http://google.com)

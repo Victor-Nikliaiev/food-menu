@@ -1,0 +1,17 @@
+// ============
+// Header
+// ============
+
+.title {
+  @include flexCenter();
+  text-transform: capitalize;
+  color: $headers-color;
+  font-size: 4vw;
+  font-family: $main-font-family;
+}
+
+.underline {
+  width: 10vw;
+  height: 0.6vw;
+  background: $underline-background-color;
+}

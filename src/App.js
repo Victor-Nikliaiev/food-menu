@@ -25,11 +25,11 @@ function App() {
 
   return (
     <main>
-      <section className="container">
-        <div className="title">
+      <section className="main-container">
+        <header className="title">
           <h1>our menu</h1>
           <div className="underline"></div>
-        </div>
+        </header>
         <Categories categories={categories} filterItems={filterItems} />
         <Menu items={items} />
       </section>

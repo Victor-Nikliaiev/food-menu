@@ -1,0 +1,20 @@
+// ===============
+// Main Styles
+// ===============
+
+body {
+  transition: all 0.5s;
+  background: $main-background-color;
+}
+
+main {
+  width: 100vw;
+  @include flexCenter();
+}
+
+.main-container {
+  @include flexCenter();
+  width: 80vw;
+  padding: 1rem;
+  padding-top: 3rem;
+}

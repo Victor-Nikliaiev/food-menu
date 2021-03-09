@@ -6,14 +6,14 @@ const Categories = ({ categories, filterItems }) => {
       <button
         key={category}
         onClick={() => filterItems(category)}
-        className="filter-btn"
+        className="category-btn"
       >
         {category}
       </button>
     );
   };
 
-  return <div>{categories.map(mapCategories)}</div>;
+  return <div className="btn-container">{categories.map(mapCategories)}</div>;
 };
 
 export default Categories;
